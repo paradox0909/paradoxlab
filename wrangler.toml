@@ -1,0 +1,10 @@
+name = "paradoxlab"
+compatibility_date = "2025-09-27"
+compatibility_flags = ["nodejs_compat"]
+
+# Vite 빌드 결과물을 Cloudflare에 올리기 위한 설정
+[assets]
+# Vite는 기본적으로 dist 폴더에 정적 파일을 생성합니다.
+directory = "./dist"
+binding = "ASSETS"
+
