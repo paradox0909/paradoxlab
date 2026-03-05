@@ -6,4 +6,4 @@ compatibility_flags = ["nodejs_compat"]
 [assets]
 # 수정: dist -> build
 directory = "./build" 
-binding = "ASSETS
+binding = "ASSETS"
