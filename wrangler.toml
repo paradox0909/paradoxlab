@@ -1,9 +1,0 @@
-name = "paradoxlab"
-compatibility_date = "2025-09-27"
-compatibility_flags = ["nodejs_compat"]
-
-# CRA 빌드 결과물(build 폴더)을 Cloudflare에 올리기 위한 설정
-[assets]
-# 수정: dist -> build
-directory = "./build" 
-binding = "ASSETS"
