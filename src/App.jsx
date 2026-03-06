@@ -1,8 +1,9 @@
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import { NotebookPen } from 'lucide-react';
+import { NotebookPen, Webhook as WebhookIcon } from 'lucide-react';
 import Home from './pages/Home';
 import BlogList from './pages/BlogList';
 import BlogPost from './pages/BlogPost';
+import Webhook from './pages/Webhook';
 
 const App = () => {
   const location = useLocation();
@@ -32,6 +33,18 @@ const App = () => {
             <NotebookPen size={14} />
             <span className="tracking-[0.25em] uppercase">Blog</span>
           </Link>
+          <span className="w-px h-4 bg-slate-800" />
+          <Link
+            to="/webhook"
+            className={`inline-flex items-center gap-1 text-xs ${
+              location.pathname.startsWith('/webhook')
+                ? 'text-emerald-400'
+                : 'text-slate-400 hover:text-emerald-300'
+            }`}
+          >
+            <WebhookIcon size={14} />
+            <span className="tracking-[0.25em] uppercase">Webhook</span>
+          </Link>
         </div>
       </div>
 
@@ -39,6 +52,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/webhook" element={<Webhook />} />
       </Routes>
     </>
   );
