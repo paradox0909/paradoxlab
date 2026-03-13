@@ -9,7 +9,7 @@ const BlogList = () => {
   return (
     <Layout>
       <header className="mb-10">
-        <p className="text-xs tracking-[0.3em] text-emerald-500 font-bold uppercase mb-3">
+        <p className="text-xs tracking-[0.3em] text-sky-500 font-bold uppercase mb-3">
           Paradox Lab / Log
         </p>
         <h1 className="text-3xl md:text-4xl font-black text-white tracking-tight mb-3">
@@ -25,15 +25,15 @@ const BlogList = () => {
           <Link
             key={post.slug}
             to={`/blog/${post.slug}`}
-            className="block rounded-xl border border-slate-800 bg-slate-950/40 hover:border-emerald-500/40 hover:bg-slate-900/60 transition-all p-4 group"
+            className="block rounded-xl border border-slate-800 bg-slate-950/40 hover:border-sky-500/40 hover:bg-slate-900/60 transition-all p-4 group"
           >
             <div className="flex items-center justify-between gap-3 mb-2">
-              <h2 className="text-lg font-semibold text-white group-hover:text-emerald-400 transition-colors">
+              <h2 className="text-lg font-semibold text-white group-hover:text-sky-400 transition-colors">
                 {post.title}
               </h2>
               <ArrowRight
                 size={16}
-                className="text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-transform"
+                className="text-slate-600 group-hover:text-sky-400 group-hover:translate-x-1 transition-transform"
               />
             </div>
             <div className="flex items-center gap-4 text-[11px] text-slate-500 mb-2">
@@ -58,7 +58,7 @@ const BlogList = () => {
 
         {posts.length === 0 && (
           <p className="text-sm text-slate-500">
-            아직 게시된 포스트가 없습니다. <span className="text-emerald-400">/src/posts</span>에 마크다운 파일을
+            아직 게시된 포스트가 없습니다. <span className="text-sky-400">/src/posts</span>에 마크다운 파일을
             추가하면 자동으로 이곳에 나타납니다.
           </p>
         )}

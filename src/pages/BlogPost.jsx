@@ -11,7 +11,7 @@ const components = {
     const match = /language-(\w+)/.exec(className || '');
     if (inline || !match) {
       return (
-        <code className="px-1.5 py-0.5 rounded bg-slate-900 text-emerald-300 text-[11px]" {...props}>
+        <code className="px-1.5 py-0.5 rounded bg-slate-900 text-sky-300 text-[11px]" {...props}>
           {children}
         </code>
       );
@@ -40,7 +40,7 @@ const BlogPost = () => {
         <div className="mb-6">
           <Link
             to="/blog"
-            className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-emerald-400 transition-colors"
+            className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-sky-400 transition-colors"
           >
             <ArrowLeft size={14} /> Back to blog
           </Link>
@@ -55,7 +55,7 @@ const BlogPost = () => {
       <div className="mb-6">
         <Link
           to="/blog"
-          className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-emerald-400 transition-colors"
+          className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-sky-400 transition-colors"
         >
           <ArrowLeft size={14} /> Back to blog
         </Link>
@@ -63,7 +63,7 @@ const BlogPost = () => {
 
       <article>
         <header className="mb-8">
-          <p className="text-xs tracking-[0.3em] text-emerald-500 font-bold uppercase mb-3">
+          <p className="text-xs tracking-[0.3em] text-sky-500 font-bold uppercase mb-3">
             Paradox Lab / Entry
           </p>
           <h1 className="text-3xl md:text-4xl font-black text-white tracking-tight mb-3">
@@ -85,7 +85,7 @@ const BlogPost = () => {
           </div>
         </header>
 
-        <div className="prose prose-invert max-w-none prose-pre:bg-transparent prose-pre:p-0 prose-code:font-mono prose-headings:text-emerald-400 prose-a:text-emerald-400">
+        <div className="prose prose-invert max-w-none prose-pre:bg-transparent prose-pre:p-0 prose-code:font-mono prose-headings:text-sky-400 prose-a:text-sky-400">
           <ReactMarkdown components={components}>{post.content}</ReactMarkdown>
         </div>
       </article>

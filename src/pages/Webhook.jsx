@@ -8,7 +8,7 @@ const Webhook = () => {
         <div className="p-4 rounded-2xl bg-slate-900/50 border border-slate-800 mb-6">
           <Construction size={48} className="text-slate-500" />
         </div>
-        <p className="text-xs tracking-[0.3em] text-emerald-500 font-bold uppercase mb-2">
+        <p className="text-xs tracking-[0.3em] text-sky-500 font-bold uppercase mb-2">
           Paradox Lab / Webhook
         </p>
         <h1 className="text-2xl font-black text-white tracking-tight mb-3">
